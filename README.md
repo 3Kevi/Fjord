@@ -9,10 +9,10 @@ A lot of the things are hard coded, since there is no need to create a database 
 
 1. Clone this repository
 ```
-git clone https://github.com/3Kevi/fjord
+git clone https://github.com/3Kevi/Fjord
 ```
 
-2. Install [Luvit](https://luvit.io/install.html), Lit and put them in $PATH.
+2. Install [Luvit](https://luvit.io/install.html), Lit and put them in $PATH
 ```
 curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh
 ```
@@ -21,7 +21,7 @@ curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh
 ```
 lit install SinisterRectus/discordia
 ```
-4. Run it
+4. Run the bot
 ```
 luvit fjord.lua
 ```
