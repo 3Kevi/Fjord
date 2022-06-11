@@ -12,10 +12,7 @@ A lot of the things are hard coded, since there is no need to create a database 
 git clone https://github.com/3Kevi/Fjord
 ```
 
-2. Install [Luvit](https://luvit.io/install.html), Lit and put them in $PATH
-```
-curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh
-```
+2. Install Luvit and Lit using the [instructions](https://luvit.io/install.html) for your platform
 
 3. Install Discordia
 ```
