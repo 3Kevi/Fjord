@@ -7,7 +7,7 @@ A lot of the things are hard coded, since there is no need to create a database 
 
 ## Running locally
 
-1. Clone this repositroty
+1. Clone this repository
 ```
 git clone https://github.com/3Kevi/fjord
 ```
