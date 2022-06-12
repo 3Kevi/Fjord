@@ -39,7 +39,7 @@ client:on('messageCreate', function (message)
                         value = os.getenv("ROLES")
                     }
                 },
-                color = 0xf7d564
+                color = message.guild.me.highestRole.color
             },
             reference = {
                 message = message,
