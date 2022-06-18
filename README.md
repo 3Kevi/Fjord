@@ -12,9 +12,9 @@ git clone https://github.com/3Kevi/Fjord
 ```
 lit install SinisterRectus/discordia
 ```
-4. Run the bot
+4. Start the bot
 ```
-luvit fjord.lua
+luvit fjord
 ```
 
 ## License

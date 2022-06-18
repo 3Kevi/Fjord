@@ -1,11 +1,12 @@
-local discordia = require("discordia")
+local discordia = require('discordia')
 local client = discordia.Client()
 
 client:on('ready', function()
 	print('Logged in as '.. client.user.username)
+    client:setGame('something')
 end)
 
-local prefix = "."
+local prefix = '.'
 
 client:on('messageCreate', function(message)
 	if message.content == prefix .. 'ping' then
@@ -16,9 +17,9 @@ client:on('messageCreate', function(message)
                 mention = false
             }
         }
-    elseif message.content == prefix .. "pong" then
+    elseif message.content == prefix .. 'pong' then
         message:reply {
-            content = "Ping!",
+            content = 'Ping!',
             reference = {
                 message = message,
                 mention = false
@@ -31,12 +32,12 @@ client:on('messageCreate', function (message)
     if message.content == prefix .. 'colors' then
         message:reply {
             embed = {
-                title = "Name colours",
-                description = "Here you can pick a fancy colour for your Discord name.",
+                title = 'Name colours',
+                description = 'Here you can pick a fancy colour for your Discord name.',
                 fields = {
                     {
-                        name = "Available colours",
-                        value = os.getenv("ROLES")
+                        name = 'Available colours',
+                        value = os.getenv('ROLES')
                     }
                 },
                 color = message.guild.me.highestRole.color
@@ -49,4 +50,4 @@ client:on('messageCreate', function (message)
     end
 end)
 
-client:run("Bot "..os.getenv("BOT_TOKEN"))
+client:run('Bot '..os.getenv('BOT_TOKEN'))
